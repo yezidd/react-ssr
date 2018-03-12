@@ -3,6 +3,7 @@
  */
 const path = require('path');
 const webpack = require('webpack');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -12,7 +13,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'server/build'),
     filename: "[name].js",
-    chunkFilename: "[name].[hash].js"
+    chunkFilename: "[name].[chunkhash:8].js"
   },
   module: {
     rules: [
@@ -23,7 +24,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: '[name].[hash].js'})
-
+    new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: '[name].[hash].js'}),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
+    }),
+    new CleanWebpackPlugin(['server/build'])
   ],
 };
