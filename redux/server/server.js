@@ -6,13 +6,19 @@ var app = express();
 var React = require('react');
 var ReactDOMServer = require('react-dom/server');
 
-import App from '../src/App';
+import App from "../src/App";
+
 import {StaticRouter} from 'react-router-dom'
 
 
 app.get('/static/vendor.bundle.js', (req, res) => {
 
   res.sendFile('/vendor.bundle.js', {root: __dirname + `/build`});
+});
+
+app.get('/static/app.css', (req, res) => {
+
+  res.sendFile('/css/app.css', {root: __dirname + `/build`});
 });
 
 app.get('/static/app.js', (req, res) => {
@@ -22,7 +28,7 @@ app.get('/static/app.js', (req, res) => {
 
 var i = 0;
 app.get('*', function (req, res) {
-  console.log(req.url);
+
   let context = {}
   var html = ReactDOMServer.renderToString(
     <StaticRouter
@@ -35,6 +41,7 @@ app.get('*', function (req, res) {
 
   console.log(context, "上下文是干嘛的" + i);
   i++;
+  console.log(html);
   if (context.url) {
     res.writeHead(context.status, {
       Location: context.url

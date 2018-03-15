@@ -5,6 +5,7 @@ export function indexPage(html) {
         <html lang="utf-8">
             <head>
                 <meta charset="UTF-8"/>
+                <link rel="stylesheet" type="text/css" href="/static/app.css"/>
                 <script>
                 </script>
             </head>
