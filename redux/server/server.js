@@ -1,57 +1,69 @@
-import {indexPage} from "./tool";
+/**
+ * Created by chenlizan on 2017/6/30.
+ */
 
-var express = require("express");
-var app = express();
-
-var React = require('react');
-var ReactDOMServer = require('react-dom/server');
-
-import App from "../src/App";
-
+import path from 'path'
+import bodyParser from 'body-parser';
+import express from 'express';
+import logger from 'morgan';
+import webpack from 'webpack';
+import webpackDevMiddleware from 'webpack-dev-middleware';
+import webpackHotMiddleware from 'webpack-hot-middleware';
+import webpackConfig from '../build/webpack.dev.config';
+import React from 'react';
+import ReactDomServer from 'react-dom/server';
+import AppDom from "../src/App";
 import {StaticRouter} from 'react-router-dom'
 
+const App = () => {
+  const app = express();
+  //挂载静态资源
+  app.use("/static", express.static("dist"));
+  //设置模版引擎为html
+  app.engine("html", require("ejs").__express);
+  //设置模版的路径
+  app.set("views", path.resolve(__dirname, "views"));
+  //有一项是'view engine'，表示没有指定文件模板格式时，默认使用的引擎插件。
+  app.set('view engine', 'html');
 
-app.get('/static/vendor.bundle.js', (req, res) => {
 
-  res.sendFile('/vendor.bundle.js', {root: __dirname + `/build`});
-});
 
-app.get('/static/app.css', (req, res) => {
+  app.get("*", function (req, res) {
 
-  res.sendFile('/css/app.css', {root: __dirname + `/build`});
-});
+    let context = {};
 
-app.get('/static/app.js', (req, res) => {
+    var html = ReactDomServer.renderToString(
+      <StaticRouter
+        location={req.url}
+        context={context}
+      >
+        <AppDom/>
+      </StaticRouter>
+    );
+    console.log(req.url);
+    console.log(context, "---上下文---");
 
-  res.sendFile('/app.js', {root: __dirname + `/build`});
-});
+    if (context.url) {
+      res.status(context.status);
+      res.location(context.url);
+      res.end();
+    } else {
+      res.render('index', {root: html});
+      res.end();
+    }
+  });
 
-var i = 0;
-app.get('*', function (req, res) {
 
-  let context = {}
-  var html = ReactDOMServer.renderToString(
-    <StaticRouter
-      location={req.url}
-      context={context}
-    >
-      <App/>
-    </StaticRouter>
-  );
+  return app;
+};
 
-  console.log(context, "上下文是干嘛的" + i);
-  i++;
-  console.log(html);
-  if (context.url) {
-    res.writeHead(context.status, {
-      Location: context.url
-    });
-    res.end()
-  } else {
-    res.end(indexPage(html));
-  }
-});
+const createApp = () => {
+  const app = App();
+  const port = process.env.PORT || 3000;
+  app.listen(port, function () {
+    console.info(`==> Listening on port ${port}. Open up http://localhost:${port}/ in your browser.`);
+  });
+  return app;
+};
 
-app.listen(3000, function () {
-  console.log('running on port ' + 3000);
-});
+createApp();

@@ -14,8 +14,7 @@ export default class App extends React.Component {
     return <div onClick={() => window.alert(123)}>
       <div>
         <Switch>
-          <Route path="/" component={ToDoContainer}/>
-          <Route path="/red" render={() => <div>1111</div>}/>
+
           <Route path="/todo" component={ToDo}/>
           <Route path="/list" component={List}/>
           {/* some other routes */}
@@ -23,7 +22,6 @@ export default class App extends React.Component {
             status={301}
             from="/red"
             to="/about"
-
           />
           <RedirectWithStatus
             status={302}

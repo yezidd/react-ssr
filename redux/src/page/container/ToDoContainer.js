@@ -3,12 +3,13 @@
  */
 import React, {Component} from 'react';
 import {Row, Col, Button} from 'antd';
+import NavBar from "../component/NavBar";
 
 export default class ToDoContainer extends Component {
   render() {
     return (
       <div>
-
+          <NavBar/>
       </div>
     );
   }
