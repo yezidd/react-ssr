@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a0cbc32-84d2-45ba-bab7-104cec98b262" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/redux/build/webpack.dev.config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/redux/server/views/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redux/readme.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/redux/package.json" afterPath="$PROJECT_DIR$/redux/package.json" />
-      <change beforePath="$PROJECT_DIR$/redux/server/build/app.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/redux/server/server.js" afterPath="$PROJECT_DIR$/redux/server/server.js" />
-      <change beforePath="$PROJECT_DIR$/redux/server/tool.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/redux/src/App.css" afterPath="$PROJECT_DIR$/redux/src/App.css" />
-      <change beforePath="$PROJECT_DIR$/redux/src/App.js" afterPath="$PROJECT_DIR$/redux/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/redux/src/page/component/NavBar.js" afterPath="$PROJECT_DIR$/redux/src/page/component/NavBar.js" />
-      <change beforePath="$PROJECT_DIR$/redux/src/page/container/ToDoContainer.js" afterPath="$PROJECT_DIR$/redux/src/page/container/ToDoContainer.js" />
-      <change beforePath="$PROJECT_DIR$/redux/webpack.config.js" afterPath="$PROJECT_DIR$/redux/build/webpack.prod.config.js" />
-      <change beforePath="$PROJECT_DIR$/redux/yarn.lock" afterPath="$PROJECT_DIR$/redux/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,7 +35,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="170">
-                <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+                <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -304,7 +293,7 @@
       <workItem from="1521172624636" duration="3176000" />
       <workItem from="1521184879307" duration="209000" />
       <workItem from="1521185781900" duration="515000" />
-      <workItem from="1521187214394" duration="897000" />
+      <workItem from="1521187214394" duration="1046000" />
     </task>
     <task id="LOCAL-00001" summary="加入了css-module-require-hook 解决服务器端不需要css的问题">
       <created>1521094983504</created>
@@ -313,17 +302,23 @@
       <option name="project" value="LOCAL" />
       <updated>1521094983504</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="重新看了一波express api 然后router逻辑搞清楚">
+      <created>1521188144695</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521188144695</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13348000" />
+    <option name="totallyTimeSpent" value="13497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-23" y="23" width="1280" height="709" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268921" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
@@ -351,7 +346,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="加入了css-module-require-hook 解决服务器端不需要css的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入了css-module-require-hook 解决服务器端不需要css的问题" />
+    <MESSAGE value="重新看了一波express api 然后router逻辑搞清楚" />
+    <option name="LAST_COMMIT_MESSAGE" value="重新看了一波express api 然后router逻辑搞清楚" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -726,7 +722,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="170">
-            <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             <folding />
           </first_editor>
           <second_editor>
