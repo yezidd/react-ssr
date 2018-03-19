@@ -6,8 +6,9 @@ import React, {Component} from 'react';
 export default class ToDo extends Component {
   render() {
     return (
-      <div>
-        Todo页面
+      <div onClick={() => alert("----")}>
+        Todo页面111--
+        222000000rrr
       </div>
     )
   }

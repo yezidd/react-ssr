@@ -14,7 +14,7 @@ export default class App extends React.Component {
     return <div onClick={() => window.alert(123)}>
       <div>
         <Switch>
-
+          <Route path="/" component={ToDoContainer} exact/>
           <Route path="/todo" component={ToDo}/>
           <Route path="/list" component={List}/>
           {/* some other routes */}

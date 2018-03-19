@@ -9,7 +9,8 @@ export default class ToDoContainer extends Component {
   render() {
     return (
       <div>
-          <NavBar/>
+        <NavBar/>
+        <button onClick={()=>alert("----")}>点击234567ddd</button>
       </div>
     );
   }
