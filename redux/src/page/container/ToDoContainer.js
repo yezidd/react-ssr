@@ -10,7 +10,6 @@ export default class ToDoContainer extends Component {
     return (
       <div>
         <NavBar/>
-        <button onClick={()=>alert("----")}>点击234567ddd</button>
       </div>
     );
   }

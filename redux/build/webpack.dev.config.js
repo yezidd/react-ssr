@@ -23,12 +23,18 @@ const clientConfig = {
   module: {
     rules: [
       {test: /\.js$/, use: ['babel-loader'], exclude: path.resolve(__dirname, "../node_modules")},
-      {test: /\.css$/, use: ExtractTextPlugin.extract({fallback: "style-loader", use: "css-loader"})},
-      {test: /\.(jpg|png|gif|webp)$/, use: ["url-loader?limit=8000"]},
+      {
+        test: /\.css$/,
+        use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({fallback: "style-loader", use: "css-loader"}))
+      },
+      {
+        test: /\.(jpg|png|gif|webp)$/, use: ["url-loader?limit=8000"]
+      },
       {
         test: /\.json$/,
         use: ['json-loader']
-      }, {
+      },
+      {
         test: /\.html$/,
         use: [{
           loader: 'html-loader',

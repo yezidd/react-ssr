@@ -11,7 +11,7 @@ import "./App.css";
 export default class App extends React.Component {
 
   render() {
-    return <div onClick={() => window.alert(123)}>
+    return <div>
       <div>
         <Switch>
           <Route path="/" component={ToDoContainer} exact/>

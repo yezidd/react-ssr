@@ -37,3 +37,39 @@
 > 通过webpack api plugin接口来实现文件加载的监听
 
 > 然后监听到html文件，通过fs模块写入到项目中去
+
+#### 关于redux服务端渲染的机制
+
+> 每次请求都讲重新初始化store
+
+> 那么必须在每次请求之后 需要保存
+
+#### 关于webpack-dev-middleware修改css不能实时刷新问题
+
+> 由于使用了ExtractTextPlugin插件使得css分离
+
+> 修改了css文件ExtractTextPlugin不能实时重新刷新打包
+
+> 查询ExtractTextPlugin issue讨论这个问题
+
+> 可以在开发环境 禁用这个插件，能解决问题
+
+> 也可以
+
+```javascript
+if (module.hot) {
+  var hotEmitter = require("webpack/hot/emitter");
+  hotEmitter.on("webpackHotUpdate", function(currentHash) {
+    document.querySelectorAll('link[href][rel=stylesheet]').forEach((link) => {
+      const nextStyleHref = link.href.replace(/(\?\d+)?$/, `?${Date.now()}`)
+      link.href = nextStyleHref
+    })
+  })
+}
+```
+
+> 还可以使用这个css-hot-loader搭配使用解决问题
+
+> 鉴于目前的情况，将采用第三种情况
+
+> 完美解决问题
