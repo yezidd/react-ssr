@@ -6,8 +6,9 @@ import "./NavBar.css";
 
 export default class NavBar extends Component {
   render() {
+    const {style, ...other} = this.props;
     return (
-      <div className="navCon">
+      <div className="navCon" style={style}>
         <div className="navTitle">
           <label for="title" className="font1">ToDoList</label>
           <input
@@ -18,6 +19,7 @@ export default class NavBar extends Component {
             placeholder="添加ToDo"
             required="required"
             autocomplete="off"
+            {...other}
           />
         </div>
       </div>

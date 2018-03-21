@@ -1,0 +1,8 @@
+.todoCon {
+    max-width: 610px;
+    width:610px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
