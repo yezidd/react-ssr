@@ -1,0 +1,47 @@
+.item {
+    max-width: 610px;
+    width: 610px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border-left: 7px solid #629A9C;
+}
+
+.selectTodo {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid red;
+    padding: 0 auto 0;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    margin: 0;
+}
+
+.deleteBtn {
+    display: flex;
+    width: 14px;
+    height: 12px;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: center;
+    border: 6px double #FFF;
+    background: #CCC;
+    line-height: 14px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+}

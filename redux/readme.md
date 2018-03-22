@@ -73,3 +73,23 @@ if (module.hot) {
 > 鉴于目前的情况，将采用第三种情况
 
 > 完美解决问题
+
+#### 关于服务端缺少window字段,redux-devtool-extension无法使用
+
+```
+    const store = createStore(
+       reducer, /* preloadedState, */
+    +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+     );
+```
+> 官方给出的答案是:For universal ("isomorphic") apps, prefix it with typeof window !== 'undefined' &&
+
+> 不清楚哪里配置的原因，偶尔可以使用，偶尔服务端会报错
+
+> 具体的错误是：enhancer need to be function
+
+> 想不明白
+
+> 然后只能提到外面 客户端进行增强器的加载
+
+> 可以使用

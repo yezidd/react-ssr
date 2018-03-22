@@ -10,7 +10,7 @@ export default class NavBar extends Component {
     return (
       <div className="navCon" style={style}>
         <div className="navTitle">
-          <label for="title" className="font1">ToDoList</label>
+          <label htmlFor="title" className="font1">ToDoList</label>
           <input
             className="todoInput"
             type="text"
@@ -18,7 +18,7 @@ export default class NavBar extends Component {
             name="title"
             placeholder="添加ToDo"
             required="required"
-            autocomplete="off"
+            autoComplete="off"
             {...other}
           />
         </div>

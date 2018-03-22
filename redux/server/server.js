@@ -15,6 +15,8 @@ import React from 'react';
 import ReactDomServer from 'react-dom/server';
 import AppDom from "../src/App";
 import {StaticRouter} from 'react-router-dom'
+import {Provider} from 'react-redux';
+import createStoreAll from '../src/store/store';
 
 const complier = webpack(webpackConfig);
 
@@ -24,7 +26,6 @@ complier.plugin('emit', (compilation, callback) => {
   let file, data;
 
   Object.keys(assets).forEach(key => {
-    console.log(key, "----", assets[key].source());
     if (key.match(/\.html$/)) {
       file = path.resolve(__dirname, "../" + key)
       data = assets[key].source()
@@ -54,7 +55,6 @@ const App = () => {
   app.use(bodyParser.urlencoded({extended: false}));
 
 
-
   //错误处理
   app.use(function (err, req, res, next) {
     res.status(500);
@@ -70,17 +70,20 @@ const App = () => {
   }));
   app.use(require("webpack-hot-middleware")(complier));
 
-  app.get("*", function (req, res) {
 
+  app.get("*", function (req, res) {
+    let store = createStoreAll();
     let context = {};
 
     var html = ReactDomServer.renderToString(
-      <StaticRouter
-        location={req.url}
-        context={context}
-      >
-        <AppDom/>
-      </StaticRouter>
+      <Provider store={store}>
+        <StaticRouter
+          location={req.url}
+          context={context}
+        >
+          <AppDom/>
+        </StaticRouter>
+      </Provider>
     );
     console.log(req.url);
     console.log(context, "---上下文---");
@@ -90,7 +93,7 @@ const App = () => {
       res.location(context.url);
       res.end();
     } else {
-      res.render('index', {root: html});
+      res.render('index', {root: html, preloadState: store});
       res.end();
     }
   });

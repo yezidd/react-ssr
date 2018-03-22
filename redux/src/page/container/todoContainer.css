@@ -1,8 +1,29 @@
 .todoCon {
     max-width: 610px;
-    width:610px;
+    width: 610px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.todoBody {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inCount {
+    display: inline-block;
+    padding: 0 5px;
+    height: 20px;
+    border-radius: 20px;
+    background: #E6E6FA;
+    line-height: 22px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
 }

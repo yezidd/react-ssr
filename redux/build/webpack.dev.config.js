@@ -12,7 +12,7 @@ const clientConfig = {
       path.resolve(__dirname, "../src/index.js"),
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=10000&reload=true'
     ],
-    vendor: ['react', 'react-dom', 'redux', 'react-redux'],
+    vendor: ['react', 'react-dom', 'redux', 'react-redux', "immutable"],
   },
   output: {
     path: path.resolve(__dirname, "../dist/client"),
