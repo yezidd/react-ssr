@@ -16,12 +16,24 @@ const todoReducer = (state = initialState, action) => {
       };
     case MODIFY_TODO:
       return {
-        list: [...state.list, {index: action.payload.index, text: action.payload.text, complete: false}]
+        list: state.list.map((v, i) => {
+          if (v.index === action.payload.index) {
+            return {index: action.payload.index, text: action.payload.text, complete: v.complete}
+          } else {
+            return v;
+          }
+        })
       }
     case COMPLETE_TODO:
       return {
-        list: [...state.list, {index: action.payload.index, complete: true}]
-      }
+        list: state.list.map((v, i) => {
+          if (v.index === action.payload.index) {
+            return {index: action.payload.index, text: v.text, complete: !v.complete}
+          } else {
+            return v;
+          }
+        })
+      };
     default:
       return state;
   }

@@ -48,7 +48,7 @@ class ToDoContainer extends Component {
           </scetion>
           <ul>
             {
-              todoUnComplete.map((v, i) => <TodoItem key={i}/>)
+              todoUnComplete.map((v, i) => <TodoItem key={i} item={v}/>)
             }
           </ul>
           <scetion className="todoCon">
@@ -60,6 +60,7 @@ class ToDoContainer extends Component {
           <ul>
             {
               todoComplete.map((v, i) => <TodoItem key={i}
+                                                   item={v}
                                                    style={{
                                                      opacity: 0.5,
                                                      borderLeft: "5px solid #999",

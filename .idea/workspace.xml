@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a0cbc32-84d2-45ba-bab7-104cec98b262" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/redux/src/page/component/TodoItem.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/redux/src/page/component/todoItem.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/redux/build/webpack.dev.config.js" afterPath="$PROJECT_DIR$/redux/build/webpack.dev.config.js" />
-      <change beforePath="$PROJECT_DIR$/redux/package.json" afterPath="$PROJECT_DIR$/redux/package.json" />
-      <change beforePath="$PROJECT_DIR$/redux/readme.md" afterPath="$PROJECT_DIR$/redux/readme.md" />
-      <change beforePath="$PROJECT_DIR$/redux/server/server.js" afterPath="$PROJECT_DIR$/redux/server/server.js" />
-      <change beforePath="$PROJECT_DIR$/redux/server/views/index.html" afterPath="$PROJECT_DIR$/redux/server/views/index.html" />
-      <change beforePath="$PROJECT_DIR$/redux/server/views/tpl/index.tpl.html" afterPath="$PROJECT_DIR$/redux/server/views/tpl/index.tpl.html" />
-      <change beforePath="$PROJECT_DIR$/redux/src/App.css" afterPath="$PROJECT_DIR$/redux/src/App.css" />
-      <change beforePath="$PROJECT_DIR$/redux/src/action/todo.js" afterPath="$PROJECT_DIR$/redux/src/action/todo.js" />
-      <change beforePath="$PROJECT_DIR$/redux/src/index.js" afterPath="$PROJECT_DIR$/redux/src/index.js" />
-      <change beforePath="$PROJECT_DIR$/redux/src/page/component/NavBar.js" afterPath="$PROJECT_DIR$/redux/src/page/component/NavBar.js" />
+      <change beforePath="$PROJECT_DIR$/redux/src/page/component/TodoItem.js" afterPath="$PROJECT_DIR$/redux/src/page/component/TodoItem.js" />
       <change beforePath="$PROJECT_DIR$/redux/src/page/container/ToDoContainer.js" afterPath="$PROJECT_DIR$/redux/src/page/container/ToDoContainer.js" />
-      <change beforePath="$PROJECT_DIR$/redux/src/page/container/todoContainer.css" afterPath="$PROJECT_DIR$/redux/src/page/container/todoContainer.css" />
-      <change beforePath="$PROJECT_DIR$/redux/src/reducer/index.js" afterPath="$PROJECT_DIR$/redux/src/reducer/index.js" />
       <change beforePath="$PROJECT_DIR$/redux/src/reducer/todo.js" afterPath="$PROJECT_DIR$/redux/src/reducer/todo.js" />
-      <change beforePath="$PROJECT_DIR$/redux/src/store/store.js" afterPath="$PROJECT_DIR$/redux/src/store/store.js" />
-      <change beforePath="$PROJECT_DIR$/redux/yarn.lock" afterPath="$PROJECT_DIR$/redux/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,8 +22,8 @@
       <file leaf-file-name="todo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redux/src/reducer/todo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="391">
+              <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -46,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToDoContainer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ToDoContainer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redux/src/page/container/ToDoContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+            <state relative-caret-position="816">
+              <caret line="50" column="69" lean-forward="false" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
               <folding>
                 <element signature="e#41#80#0" expanded="true" />
               </folding>
@@ -88,9 +73,21 @@
       <file leaf-file-name="todo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redux/src/action/todo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="289">
+              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TodoItem.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redux/src/page/component/TodoItem.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding>
+                <element signature="e#41#80#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/redux/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -134,16 +131,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redux/server/views/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -204,14 +191,14 @@
         <option value="$PROJECT_DIR$/redux/src/reducer/index.js" />
         <option value="$PROJECT_DIR$/redux/src/page/component/NavBar.js" />
         <option value="$PROJECT_DIR$/redux/src/page/component/todoItem.css" />
-        <option value="$PROJECT_DIR$/redux/src/page/component/TodoItem.js" />
         <option value="$PROJECT_DIR$/redux/server/server.js" />
         <option value="$PROJECT_DIR$/redux/server/views/tpl/index.tpl.html" />
         <option value="$PROJECT_DIR$/redux/src/index.js" />
         <option value="$PROJECT_DIR$/redux/src/store/store.js" />
         <option value="$PROJECT_DIR$/redux/readme.md" />
-        <option value="$PROJECT_DIR$/redux/src/reducer/todo.js" />
         <option value="$PROJECT_DIR$/redux/src/page/container/ToDoContainer.js" />
+        <option value="$PROJECT_DIR$/redux/src/reducer/todo.js" />
+        <option value="$PROJECT_DIR$/redux/src/page/component/TodoItem.js" />
       </list>
     </option>
   </component>
@@ -228,11 +215,11 @@
     <handled-path value="$PROJECT_DIR$/redux/node_modules" />
     <handled-path value="$PROJECT_DIR$/router/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="26" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="13" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="709" />
+    <option name="height" value="707" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -249,6 +236,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,6 +287,13 @@
               <item name="react-ssr" type="462c0819:PsiDirectoryNode" />
               <item name="redux" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-ssr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-ssr" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -336,7 +331,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,7 +427,10 @@
       <workItem from="1521699602465" duration="1694000" />
       <workItem from="1521701858548" duration="277000" />
       <workItem from="1521702184012" duration="4151000" />
-      <workItem from="1521706949502" duration="532000" />
+      <workItem from="1521706949502" duration="561000" />
+      <workItem from="1521708121932" duration="2000" />
+      <workItem from="1521708438483" duration="1825000" />
+      <workItem from="1521716259326" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="加入了css-module-require-hook 解决服务器端不需要css的问题">
       <created>1521094983504</created>
@@ -477,14 +474,21 @@
       <option name="project" value="LOCAL" />
       <updated>1521618510755</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="todolist头部更新完毕">
+      <created>1521707675838</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1521707675838</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42522000" />
+    <option name="totallyTimeSpent" value="44385000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="24" width="1280" height="709" extended-state="6" />
+    <frame x="13" y="23" width="1280" height="707" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1938046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -788,16 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redux/src/page/component/TodoItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redux/server/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -858,35 +852,45 @@
     <entry file="file://$PROJECT_DIR$/redux/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redux/src/action/todo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redux/src/reducer/todo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="391">
+          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/redux/src/action/todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/redux/src/page/container/ToDoContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        <state relative-caret-position="816">
+          <caret line="50" column="69" lean-forward="false" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+          <folding>
+            <element signature="e#41#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/src/page/component/TodoItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
             <element signature="e#41#80#0" expanded="true" />
           </folding>
