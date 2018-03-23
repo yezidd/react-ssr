@@ -16,6 +16,7 @@ class TodoItem extends Component {
 
   render() {
     const {style, check, complete, item, deleteBtn} = this.props;
+    console.log(item.index, item,this.props.item.complete, this.state.checkValue, "----");
     return (
       <li className="item" style={style}>
         <input
@@ -24,13 +25,13 @@ class TodoItem extends Component {
           className={"selectTodo"}
           onChange={(e) => {
             console.log(e.target.checked);
-            this.setState({checkValue: e.target.checked}, (e) => {
-              complete(item.index)
-            });
+            this.setState({checkValue: e.target.checked});
+            console.log(this.state.checkValue);
+            complete(item.index);
           }}
           checked={this.state.checkValue}
         />
-        <p className="content">456</p>
+        <p className="content">{item.text}</p>
         <a className="deleteBtn" onClick={() => deleteBtn(item.index)}>-</a>
       </li>
     );

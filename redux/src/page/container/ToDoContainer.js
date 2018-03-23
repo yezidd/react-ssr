@@ -31,6 +31,7 @@ class ToDoContainer extends Component {
 
   render() {
     const {todoUnCompleteLength, todoCompleteLength, todoUnComplete, todoComplete} = this.props;
+    console.log(this.props);
     return (
       <div>
         <NavBar
@@ -48,7 +49,7 @@ class ToDoContainer extends Component {
           </scetion>
           <ul>
             {
-              todoUnComplete.map((v, i) => <TodoItem key={i} item={v}/>)
+              todoUnComplete.map((v, i) => <TodoItem key={v.index} item={v}/>)
             }
           </ul>
           <scetion className="todoCon">
@@ -59,7 +60,7 @@ class ToDoContainer extends Component {
           </scetion>
           <ul>
             {
-              todoComplete.map((v, i) => <TodoItem key={i}
+              todoComplete.map((v, i) => <TodoItem key={v.index}
                                                    item={v}
                                                    style={{
                                                      opacity: 0.5,

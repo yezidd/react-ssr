@@ -70,9 +70,12 @@ const App = () => {
   }));
   app.use(require("webpack-hot-middleware")(complier));
 
-
+  let store = createStoreAll();
+  store.subscribe(function () {
+    console.log("----服务端store的变化产生数据变化");
+  });
   app.get("*", function (req, res) {
-    let store = createStoreAll();
+
     let context = {};
 
     var html = ReactDomServer.renderToString(
