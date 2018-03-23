@@ -6,6 +6,7 @@ import {Provider} from "react-redux";
 import createStoreAll from './store/store';
 import storage from './utils/storage';
 
+// let preState = Object.assign({}, window.__INITIAL_STATE__, JSON.parse(storage.getItem("data")));
 let preState = Object.assign({}, window.__INITIAL_STATE__, {});
 
 let store = createStoreAll(preState, typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
