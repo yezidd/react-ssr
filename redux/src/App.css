@@ -11,3 +11,7 @@ ul{
 ul li{
     cursor: move;
 }
+input:focus {
+    outline: none !important;
+    box-shadow: none;
+}
